@@ -1,17 +1,24 @@
+class sortWords():
 
-def main():
-    inputStr = input('Enter a string')
+    def sortInput(self, inputStr):
+        words = [word.lower() for word in inputStr.split()]
 
-    words = [word.lower() for word in inputStr.split()]
+        # sort the list
+        words.sort()
 
-    # sort the list
-    words.sort()
+        # display the sorted words
 
-    # display the sorted words
-
-    print("The sorted words are:")
-    for word in words:
-        print(word)
+        # print("The sorted words are:")
+        # for word in words:
+        #     print(word)
+        return words
 
 
-main()
+# def main():
+#     inputStr = input('Enter a string')
+#     print(inputStr)
+#     # inputStr = "Good Morning"
+#     print(sortWords().sortInput(inputStr))
+
+
+# main()
